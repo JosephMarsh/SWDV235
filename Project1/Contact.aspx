@@ -35,13 +35,13 @@
                 <fieldset>
                     <fieldset>
                         <label for="firstName">First Name</label>
-                        <asp:TextBox ID="firstName" placeholder="First"  runat="server"></asp:TextBox>
+                        <asp:TextBox ID="firstName" placeholder="First"  runat="server" ToolTip="Enter your first name."></asp:TextBox>
 
                         <label for="lastName">Last Name</label>
-                        <asp:TextBox ID="lastName" placeholder="Last" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="lastName" placeholder="Last" runat="server" ToolTip="Enter your last name."></asp:TextBox>
                     
                         <label for="email">Email</label>
-                        <asp:TextBox ID="email" placeholder="address@place.com" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="email" placeholder="address@place.com" runat="server" ToolTip="Enter your email address."></asp:TextBox>
 
                         <p> 
                             <!--First name  error messages -->
@@ -86,8 +86,8 @@
                         <asp:CheckBox ID="newsLetter" CssClass="newsLetter" Checked="true" runat="server" />
                     </fieldset>
                     <br />
-                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" /> 
-                        <asp:Button ID="btnReset" runat="server" Text="Reset" OnClick="btnReset_Click" CausesValidation="false" />
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" /> 
+                    <asp:Button ID="btnReset" runat="server" Text="Reset" OnClick="btnReset_Click" CausesValidation="false" />
 
                 </fieldset>
             </form>
