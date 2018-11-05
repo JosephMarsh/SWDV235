@@ -79,7 +79,6 @@ public partial class Contact : System.Web.UI.Page
         comm = new SqlCommand(
            "EXECUTE SP_Add_New_User @first,@last,@email,@isCurrent", conn);
 
-
         // Add parameter
         comm.Parameters.Add("@first", System.Data.SqlDbType.Text);
         comm.Parameters["@first"].Value = firstName.Text;
@@ -134,7 +133,6 @@ public partial class Contact : System.Web.UI.Page
         // Create command
         comm = new SqlCommand(
            "EXECUTE SP_Add_Comment @customerID, @customerComment", conn);
-
 
         // Add parameter
         comm.Parameters.Add("@customerID", System.Data.SqlDbType.Int);
